@@ -1,24 +1,35 @@
-<h1>Hi Tommy</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Website name</title>
+        <link rel='stylesheet' type='text/css' href='css/style.css'>
+    </head>
 
-<a href="/">Go back to start. Do not pass GO. Do not collect $200.</a>
+    <body>
+
+    <h1>Hi Tommy</h1>
+
+    <a href="/">Go back to start. Do not pass GO. Do not collect $200.</a>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript">
-</script>
-<div ng-app="">
-<p>Name: <input type="text" ng-model="name" /></p>
-<p ng-bind="name"></p>
-</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript">
+    </script>
+    <div ng-app="">
+    <p>Name: <input type="text" ng-model="name" /></p>
+    <p ng-bind="name"></p>
+    </div>
 
-<div ng-app="myApp" ng-controller="myCtrl">
-<h1 ng-mousemove="count = count + 1">Mouse Over Me!</h1>
-<h2>{{ count }}</h2>
-</div>
-<script type="text/javascript">
-//<![CDATA[
-var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope) {
-    $scope.count = 0;
-});
-//]]>
-</script>
+    <div ng-app="myApp" ng-controller="myCtrl">
+    <h1 ng-mousemove="count = count + 1">Mouse Over Me!</h1>
+    <h2>{{ count }}</h2>
+    </div>
+    <script type="text/javascript">
+    //<![CDATA[
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+        $scope.count = 0;
+    });
+    //]]>
+    </script>
+    </body>
+</html>
